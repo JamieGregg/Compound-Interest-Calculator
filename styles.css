@@ -1,0 +1,27 @@
+.income-type{
+  margin-top: 2rem;
+}
+
+.income-header,
+.investment-header{
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.7;
+}
+
+
+.radio-button-type{
+  padding-left: 1%;
+}
+
+.btn-submit-income,
+.btn-submit-calc {
+  margin-top: 2rem;
+}
+
+.income-layout,
+.investment-layout{
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 2rem;
+}
