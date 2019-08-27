@@ -23,7 +23,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   <header>
-    <div class="container">
+    <div class="header-container">
       <img src="assets/invest-logo.png" alt="logo" class="logo">
 
       <nav>
@@ -34,51 +34,48 @@
     </div>
   </header>
 
-  <form>
-    <div class="form-group investment-layout">
-      <div class="form-group">
-        <h1 class="investment-header">The Investment Calculator</h1>
-        <label for="initalInvestment">Inital Investment:</label>
-        <input type="text" class="form-control-sm investment-value" id="initalInvestment" placeholder="Initial Investment"><br>
-      </div>
-      <div class="form-group">
-        <label for="interestAmount">Annual % Growth:</label>
-        <input type="text" class="form-control-sm interest-amount" id="interestAmount" placeholder="% Annual Interest"><br>
-      </div>
-      <div class="form-group">
-        <label for="montlyDeposit">Monthly Deposit:</label>
-        <input type="text" class="form-control-sm monthly-amount" id="monthlyAmount" placeholder="Monthly Investment"><br>
-      </div>
-      <div class="form-group">
-        <label for="yearsInvested">Years Invested:</label>
-        <input type="text" class="form-control-sm years-invested" id="yearsInvested" placeholder="Monthly Investment">
-      </div>
-      <div class="form-check">
-        <input class="form-check-input inflation-check" type="checkbox" name="inflationCheck" value="">
-        <label class="form-check-label" for="inflationCheck">Increase Depositis with Inflation?</label><br>
-      </div>
-      <div class="form-group">
-        <label class="inflation-rate hidden" for="inflationRate">Inflation Rate:</label>
-        <input type="text" class="form-control-sm hidden inflation-rate inflation-amount" id="inflationRate" placeholder="Rate of Inflation">
-      </div>
-      <button type="button" class="btn btn-info" id="submit-investment" name="">Submit</button>
+  <div class="calc-page">
+    <div class="form">
+      <form class="calc-form">
+        <p class="message">Inital Investment (£)</p>
+        <input type="text" class="investment-value" placeholder="Inital Investment (£)" />
+        <p class="message">Annual Growth (%)</p>
+        <input type="text" class="interest-amount" placeholder="Annual Growth (%)" />
+        <p class="message">Monthly Deposit (£)</p>
+        <input type="text" class="monthly-amount" placeholder="Monthly Deposit (£)" />
+        <p class="message">Years Invested</p>
+        <input type="text" class="years-invested" placeholder="Years Invested" />
+        <p class="message">Increase Deposits with Inflation?</p>
+        <input type="checkbox" class="inflation-check form-check-input" />
+        <p class="hidden inflation-rate message">Rate of Inflation (%)</p>
+        <input type="text" class="hidden inflation-rate inflation-amount" placeholder="Rate of Inflation ($)" />
+        <button type="button" onclick="window.location.href='#table-results'" class="submit-investment">Calculate</button>
+      </form>
     </div>
-  </form>
-
-  <div class="income-layout">
-    <table class="table table-investment">
-      <thead class="thead">
-        <th class="col">Years</th>
-        <th class="col">Yearly Deposit</th>
-        <th class="col">Total Deposit</th>
-        <th class="col">Year Interest</th>
-        <th class="col">Total Interest</th>
-        <th class="col">Investment Value</th>
-      </thead>
-      <tbody>
-      </tbody>
-    </table>
   </div>
+
+  <section id="table-results">
+    <div class="income-layout">
+      <table class="table table-investment">
+        <thead class="thead">
+          <th class="col">Years</th>
+          <th class="col">Yearly Deposit</th>
+          <th class="col">Total Deposit</th>
+          <th class="col">Year Interest</th>
+          <th class="col">Total Interest</th>
+          <th class="col">Investment Value</th>
+        </thead>
+        <tbody>
+          <td>0</td>
+          <td>£0</td>
+          <td>£0</td>
+          <td>£0</td>
+          <td>£0</td>
+          <td>£0</td>
+        </tbody>
+      </table>
+    </div>
+  </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="index.js" charset="utf-8"></script>

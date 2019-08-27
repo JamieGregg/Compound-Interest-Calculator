@@ -19,7 +19,7 @@ var investmentValue;
 
 //assigning all the values to the variables
 $(document).ready(function() {
-  $("#submit-investment").click(function() {
+  $(".submit-investment").click(function() {
     initalInvestment = $(".investment-value").val();
     annualGrowth = $(".interest-amount").val();
     monthlyDeposit = $(".monthly-amount").val();
