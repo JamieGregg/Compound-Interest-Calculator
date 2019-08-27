@@ -1,25 +1,94 @@
-.income-type,
-{
-  margin-top: 2rem;
+/*Colour Palette
+primary #05668D
+secondary #028090
+third #00A896
+contrast #02C39A
+*/
+
+
+header{
+  background: #028090;
 }
 
-.income-header,
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+body{
+  font-weight: 400;
+}
+
+nav{
+  float: right;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li{
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 20px;
+
+  position: relative;
+}
+
+nav a{
+  color: #fff;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  text-decoration: none!important;
+}
+
+nav a:hover{
+  color: #DCDCDC;
+}
+
+nav a:before{
+  content: '';
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: #fff;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+  width: 100%;
+}
+
+.nav{
+  text-decoration: none;
+}
+
+.container{
+  margin: 0 auto;
+}
+
+.logo{
+  float: left;
+  padding-top: 4px;
+}
+
 .investment-header{
   font-weight: 400;
   font-size: 26px;
   line-height: 1.7;
 }
 
-
-.radio-button-type{
-  padding-left: 1%;
-}
-
 .inflation-rate{
   margin-top: 1rem;
 }
 
-.btn-submit-income,
 .btn-submit-calc {
   margin-top: 2rem;
 }
