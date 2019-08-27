@@ -24,6 +24,8 @@ $(document).ready(function() {
     monthlyDeposit = $(".monthly-amount").val();
     yearsInvested = $(".years-invested").val();
     inflation = $(".inflation-check").prop("checked");
+
+    $(".table-investment td").remove();
     compoundInterestCalculation();
   });
 });
@@ -67,13 +69,14 @@ function compoundInterestCalculation(){
     parseFloat(monthlyDeposit);
     totalDeposit = parseFloat(totalDeposit) + parseFloat(monthlyContibution*12);
     parseFloat(totalDeposit);
-    yearlyInterest = (total - principal) - (monthlyContibution*12)
+    yearlyInterest = (total - principal) - (monthlyContibution*12);
     parseFloat(yearlyInterest);
     totalInterest = total - totalDeposit;
     parseFloat(totalInterest);
     principal = total;
 
     //Assigning values to the table
+
     $(".table-investment tr:last").after("<tr><td>" + i +"</td><td>£" + monthlyDeposit.toFixed(2) + "</td><td>£" + totalDeposit.toFixed(2) + "</td><td>£" + yearlyInterest.toFixed(2) + "</td><td>£" + totalInterest.toFixed(2) + "</td><td>£" + total +"</td></tr>");
   }
 };
