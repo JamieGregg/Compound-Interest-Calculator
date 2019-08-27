@@ -61,7 +61,11 @@
         <input class="form-check-input inflation-check" type="checkbox" name="inflationCheck" value="">
         <label class="form-check-label" for="inflationCheck">Increase Depositis with Inflation?</label><br>
       </div>
-      <button type="button" class="btn btn-info" id="submit-investment"name="">Submit</button>
+      <div class="form-group">
+        <label class ="inflation-rate hidden" for="inflationRate">Inflation Rate:</label>
+        <input type="text" class="form-control-sm hidden inflation-rate inflation-amount" id="inflationRate" placeholder="Rate of Inflation" >
+      </div>
+        <button type="button" class="btn btn-info" id="submit-investment"name="">Submit</button>
     </div>
   </form>
 

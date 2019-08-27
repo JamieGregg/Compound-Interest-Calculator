@@ -1,4 +1,5 @@
-.income-type{
+.income-type,
+{
   margin-top: 2rem;
 }
 
@@ -14,6 +15,10 @@
   padding-left: 1%;
 }
 
+.inflation-rate{
+  margin-top: 1rem;
+}
+
 .btn-submit-income,
 .btn-submit-calc {
   margin-top: 2rem;
@@ -24,4 +29,8 @@
   padding-left: 15%;
   padding-right: 15%;
   padding-top: 2rem;
+}
+
+.hidden{
+  display: none;
 }
