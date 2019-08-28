@@ -78,21 +78,19 @@ nav a:hover::before{
 .logo{
   float: left;
   padding-top: 4px;
+  margin-left: 5%;
 }
 
 .calc-page {
-  width: 360px;
   padding: 5% 0% 0;
   margin: auto;
 }
 
 .form {
-  position: relative;
-  z-index: 1;
   background: #FFFFFF;
-  max-width: 360px;
-  margin: 0 auto 100px;
+  max-width: 400px;
   padding: 45px;
+  margin: auto;
   text-align: left;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
@@ -139,12 +137,15 @@ nav a:hover::before{
   position:relative;
 }
 
+.inflation-amount{
+  margin-bottom: 15%;
+}
+
 .hidden{
   display: none;
 }
 
 .income-layout{
-  margin: auto;
-  width: 60%;
+  padding-top: 10%;
   padding-bottom: 20%;
 }
