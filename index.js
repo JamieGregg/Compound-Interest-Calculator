@@ -29,7 +29,14 @@ $(document).ready(function() {
     annualGrowth = $(".interest-amount").val();
     monthlyDeposit = $(".monthly-amount").val();
     yearsInvested = $(".years-invested").val();
-    inflationRate = $(".inflation-amount").val();
+
+    if( $(".inflation-amount").val() == "")
+    {
+      inflationRate = 2;
+    }
+    else{
+      inflationRate = $(".inflation-amount").val();
+    }
 
     $(".table-investment td").remove();
     compoundInterestCalculation();
