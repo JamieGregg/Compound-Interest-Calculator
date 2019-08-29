@@ -4,9 +4,7 @@ secondary #028090
 third #00A896
 contrast #02C39A
 */
-
-
-header{
+header {
   background: #028090;
 }
 
@@ -16,81 +14,83 @@ header::after {
   clear: both;
 }
 
-body{
+body {
   font-weight: 400;
   font-family: "Roboto", sans-serif;
 }
 
-nav{
+nav {
   float: right;
 }
 
-nav ul{
+nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-nav li{
+nav li {
   display: inline-block;
-  margin-left: 70px;
+  margin-right: 70px;
   padding-top: 20px;
-
+  padding-right: 20px;
   position: relative;
 }
 
-nav a{
+nav a {
   color: #fff;
   font-family: 'PT Sans', sans-serif;
   font-size: 16px;
-  text-decoration: none!important;
+  text-decoration: none !important;
 }
 
-nav a:hover{
+nav a:hover {
   color: #DCDCDC;
 }
 
-nav a:before{
+nav a:before {
   content: '';
   display: block;
   height: 5px;
   width: 100%;
   background-color: #fff;
-
   position: absolute;
   top: 0;
   width: 0%;
   transition: all ease-in-out 250ms;
 }
 
-nav a:hover::before{
+nav a:hover::before {
   width: 100%;
 }
 
-.nav{
+.nav {
   text-decoration: none;
 }
 
-.header-container{
+.header-container {
   margin: 0 auto;
 }
 
-.logo{
+.logo {
   float: left;
   padding-top: 4px;
-  margin-left: 5%;
+  padding-left: 10%;
 }
 
 .calc-page {
+  width: 360px;
   padding: 5% 0% 0;
   margin: auto;
 }
 
 .form {
+  position: relative;
+  z-index: 1;
   background: #FFFFFF;
-  max-width: 400px;
+  max-width: 360px;
+  margin: 0 auto 100px;
   padding: 45px;
-  margin: auto;
   text-align: left;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
@@ -121,7 +121,7 @@ nav a:hover::before{
   cursor: pointer;
 }
 
-.form button:hover,.form button:active,.form button:focus {
+.form button:hover, .form button:active, .form button:focus {
   background: #43A047;
 }
 
@@ -133,19 +133,21 @@ nav a:hover::before{
   font-size: 15px;
 }
 
-.inflation-check{
-  position:relative;
+.inflation-check {
+  position: relative;
 }
 
-.inflation-amount{
-  margin-bottom: 15%;
+.inflation-amount {
+  margin-bottom: 15px;
+  ;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
-.income-layout{
-  padding-top: 10%;
+.income-layout {
+  margin: auto;
+  width: 60%;
   padding-bottom: 20%;
 }

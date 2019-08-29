@@ -35,54 +35,52 @@
   </header>
 
   <div class="container-fluid">
-    <div class="row">
-      <div class="calc-page col-md-4">
-        <div class="table-responsive">
-          <div class="form">
-            <form class="calc-form">
-              <p class="message">Inital Investment (£)</p>
-              <input type="text" class="investment-value" placeholder="Inital Investment (£)" />
-              <p class="message">Annual Growth (%)</p>
-              <input type="text" class="interest-amount" placeholder="Annual Growth (%)" />
-              <p class="message">Monthly Deposit (£)</p>
-              <input type="text" class="monthly-amount" placeholder="Monthly Deposit (£)" />
-              <p class="message">Years Invested</p>
-              <input type="text" class="years-invested" placeholder="Years Invested" />
-              <p class="message">Increase Deposits with Inflation?</p>
-              <input type="checkbox" class="inflation-check form-check-input" />
-              <p class="hidden inflation-rate message">Rate of Inflation (%)</p>
-              <input type="text" class="hidden inflation-rate inflation-amount" placeholder="Rate of Inflation ($)" />
-              <button type="button" onclick="window.location.href='#table-results'" class="submit-investment">Calculate</button>
-            </form>
-          </div>
-        </div>
+    <div class="calc-page">
+      <div class="form">
+        <form class="calc-form">
+          <p class="message">Inital Investment (£)</p>
+          <input type="text" class="investment-value" placeholder="Inital Investment (£)" />
+          <p class="message">Annual Growth (%)</p>
+          <input type="text" class="interest-amount" placeholder="Annual Growth (%)" />
+          <p class="message">Monthly Deposit (£)</p>
+          <input type="text" class="monthly-amount" placeholder="Monthly Deposit (£)" />
+          <p class="message">Years Invested</p>
+          <input type="text" class="years-invested" placeholder="Years Invested" />
+          <p class="message">Increase Deposits with Inflation?</p>
+          <input type="checkbox" class="inflation-check form-check-input" />
+          <p class="hidden inflation-rate message">Rate of Inflation (%)</p>
+          <input type="text" class="hidden inflation-rate inflation-amount" placeholder="Rate of Inflation ($)" />
+          <button type="button" onclick="window.location.href='#table-results'" class="submit-investment">Calculate</button>
+        </form>
       </div>
-
-      <section id="table-results">
-        <div class="income-layout col-md-9">
-          <div class="table-responsive">
-            <table class="table table-investment w-auto">
-              <thead class="thead">
-                <th class="col">Years</th>
-                <th class="col">Yearly Deposit</th>
-                <th class="col">Total Deposit</th>
-                <th class="col">Year Interest</th>
-                <th class="col">Total Interest</th>
-                <th class="col">Investment Value</th>
-              </thead>
-              <tbody>
-                <td>0</td>
-                <td>£0</td>
-                <td>£0</td>
-                <td>£0</td>
-                <td>£0</td>
-                <td>£0</td>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
     </div>
+  </div>
+
+  <section id="table-results">
+    <div class="income-layout">
+      <div class="table-responsive">
+        <table class="table table-hover table-investment">
+          <thead class="thead">
+            <th class="col">Years</th>
+            <th class="col">Yearly Deposit</th>
+            <th class="col">Total Deposit</th>
+            <th class="col">Year Interest</th>
+            <th class="col">Total Interest</th>
+            <th class="col">Investment Value</th>
+          </thead>
+          <tbody>
+            <td>0</td>
+            <td>£0</td>
+            <td>£0</td>
+            <td>£0</td>
+            <td>£0</td>
+            <td>£0</td>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  </div>
   </div>
 
 
