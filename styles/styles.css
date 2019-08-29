@@ -1,0 +1,149 @@
+/*Colour Palette
+primary #05668D
+secondary #028090
+third #00A896
+contrast #02C39A
+*/
+
+body {
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  float: right;
+
+}
+nav::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 70px;
+  padding-top: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+nav a {
+  color: #fff;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  text-decoration: none !important;
+}
+
+nav a:hover {
+  color: #DCDCDC;
+}
+
+nav a:before {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 84%;
+}
+
+.nav {
+  text-decoration: none;
+}
+
+
+.logo {
+  float: left;
+  padding-top: 4px;
+  padding-left: 10%;
+}
+
+.calc-page {
+  width: 360px;
+  padding: 18% 0% 0;
+  margin: auto;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: left;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4DB6AC;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.form button:hover, .form button:active, .form button:focus {
+  background: #47968F;
+}
+
+.form .message {
+  margin-left: 0px;
+  margin-top: 6%;
+  margin-bottom: 6px;
+  color: #696969;
+  font-size: 15px;
+}
+
+.inflation-check{
+  display: block;
+
+}
+
+.inflation-amount {
+  margin-bottom: 15px;
+
+}
+
+.hidden {
+  display: none;
+}
+
+.income-layout {
+  margin: auto;
+  width: 60%;
+  padding-bottom: 20%;
+}
