@@ -4,15 +4,6 @@ secondary #028090
 third #00A896
 contrast #02C39A
 */
-header {
-  background: #028090;
-}
-
-header::after {
-  content: '';
-  display: table;
-  clear: both;
-}
 
 body {
   font-weight: 400;
@@ -21,6 +12,12 @@ body {
 
 nav {
   float: right;
+
+}
+nav::after{
+  content: '';
+  display: table;
+  clear: both;
 }
 
 nav ul {
@@ -61,7 +58,7 @@ nav a:before {
 }
 
 nav a:hover::before {
-  width: 100%;
+  width: 84%;
 }
 
 .nav {
@@ -80,7 +77,7 @@ nav a:hover::before {
 
 .calc-page {
   width: 360px;
-  padding: 5% 0% 0;
+  padding: 18% 0% 0;
   margin: auto;
 }
 
