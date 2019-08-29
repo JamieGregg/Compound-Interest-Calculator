@@ -65,9 +65,6 @@ nav a:hover::before {
   text-decoration: none;
 }
 
-.header-container {
-  margin: 0 auto;
-}
 
 .logo {
   float: left;
@@ -103,11 +100,12 @@ nav a:hover::before {
   font-size: 14px;
 }
 
+
 .form button {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: #4CAF50;
+  background: #4DB6AC;
   width: 100%;
   border: 0;
   padding: 15px;
@@ -119,7 +117,7 @@ nav a:hover::before {
 }
 
 .form button:hover, .form button:active, .form button:focus {
-  background: #43A047;
+  background: #47968F;
 }
 
 .form .message {
@@ -130,13 +128,14 @@ nav a:hover::before {
   font-size: 15px;
 }
 
-.inflation-check {
-  position: relative;
+.inflation-check{
+  display: block;
+
 }
 
 .inflation-amount {
   margin-bottom: 15px;
-  ;
+
 }
 
 .hidden {

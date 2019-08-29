@@ -29,7 +29,6 @@ $(document).ready(function() {
     annualGrowth = $(".interest-amount").val();
     monthlyDeposit = $(".monthly-amount").val();
     yearsInvested = $(".years-invested").val();
-    inflation = $(".inflation-check").prop("checked");
     inflationRate = $(".inflation-amount").val();
 
     $(".table-investment td").remove();
@@ -39,11 +38,13 @@ $(document).ready(function() {
 
 //Checking to see if the inflation checkbox is checked
 $(document).ready(function() {
-  $(".inflation-check").change(function() {
-    if (this.checked) {
+  $("#inflationSelect").change(function() {
+    if ($(".inflation-check option:selected").text() == "Yes") {
       $(".inflation-rate").fadeIn("fast");
+      inflation = true;
     } else {
       $(".inflation-rate").fadeOut("fast");
+      inflation = false;
     }
   });
 });
