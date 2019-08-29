@@ -4,6 +4,11 @@ secondary #028090
 third #00A896
 contrast #02C39A
 */
+@media only screen and (max-width: 600px) {
+.help{
+  display: block;
+}
+}
 
 body {
   font-weight: 400;

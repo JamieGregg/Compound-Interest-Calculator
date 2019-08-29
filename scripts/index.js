@@ -30,8 +30,7 @@ $(document).ready(function() {
     monthlyDeposit = $(".monthly-amount").val();
     yearsInvested = $(".years-invested").val();
 
-    if( $(".inflation-amount").val() == "")
-    {
+    if( $(".inflation-amount").val() == ""){
       inflationRate = 2;
     }
     else{
